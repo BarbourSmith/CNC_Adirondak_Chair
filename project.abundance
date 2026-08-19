@@ -68,8 +68,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.15211640211640212,
-          "y": 0.6267409470752089,
+          "x": 0.2294973544973545,
+          "y": 0.5738161559888579,
           "uniqueID": "id-4417",
           "name": "Side Panel",
           "ioValues": [
@@ -477,12 +477,11 @@
             },
             {
               "name": "xDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": 0
             },
             {
               "name": "yDist",
-              "ioValue": 285,
+              "ioValue": 297.5,
               "currentEquation": "570/2"
             },
             {
@@ -493,8 +492,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6164021164021164,
-          "y": 0.2562674094707521,
+          "x": 0.6276455026455026,
+          "y": 0.23119777158774377,
           "uniqueID": "id-4498",
           "ioValues": [
             {
@@ -534,21 +533,17 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.4537037037037038,
-          "y": 0.7910863509749304,
+          "x": 0.19642857142857142,
+          "y": 0.8997214484679666,
           "uniqueID": "id-4509",
-          "name": "x + y",
+          "name": "(570/2)+T",
           "ioValues": [
             {
-              "name": "x",
-              "ioValue": 1
-            },
-            {
-              "name": "y",
-              "ioValue": 1
+              "name": "T",
+              "ioValue": 12.5
             }
           ],
-          "currentEquation": "x + y"
+          "currentEquation": "(570/2)+T"
         }
       ],
       "allConnectors": [
@@ -556,6 +551,11 @@
           "ap2Name": "Wood_Thickness",
           "ap1ID": "id-4414",
           "ap2ID": "id-4417"
+        },
+        {
+          "ap2Name": "T",
+          "ap1ID": "id-4414",
+          "ap2ID": "id-4509"
         },
         {
           "ap2Name": "geometry",
@@ -601,9 +601,29 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-4504",
           "ap2ID": "id-4412"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-4509",
+          "ap2ID": "id-4492"
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Readme",
+      "x": 0.2361111111111111,
+      "y": 0.7688022284122563,
+      "uniqueID": "id-4514",
+      "name": "README",
+      "ioValues": [
+        {
+          "name": "value",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "readMeText": "Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. ",
+      "global": true
     }
   ],
   "allConnectors": [
