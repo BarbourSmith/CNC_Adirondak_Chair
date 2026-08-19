@@ -11,5 +11,7 @@
 
 
 
- 
+ Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. 
+
+
 
