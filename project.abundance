@@ -34,8 +34,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.37698412698412703,
-      "y": 0.3203342618384401,
+      "x": 0.3802910052910053,
+      "y": 0.27019498607242337,
       "uniqueID": "id-4410",
       "name": "Side Pannels",
       "ioValues": [
@@ -528,6 +528,14 @@
             {
               "name": "Shape 2",
               "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
             }
           ]
         },
@@ -912,8 +920,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.12698412698412698,
-          "y": 0.807799442896936,
+          "x": 0.12367724867724868,
+          "y": 0.8133704735376045,
           "uniqueID": "id-4759",
           "name": "Curved Base",
           "ioValues": [
@@ -1123,8 +1131,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.2976190476190476,
-          "y": 0.7743732590529249,
+          "x": 0.3287037037037037,
+          "y": 0.7325905292479109,
           "uniqueID": "id-5089",
           "ioValues": [
             {
@@ -1149,8 +1157,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4656084656084656,
-          "y": 0.713091922005571,
+          "x": 0.6494708994708994,
+          "y": 0.6740947075208913,
           "uniqueID": "id-5095",
           "ioValues": [
             {
@@ -1168,10 +1176,50 @@
             },
             {
               "name": "zDist",
-              "ioValue": 200,
-              "currentEquation": "200"
+              "ioValue": 281,
+              "currentEquation": "15*25.4-100"
             }
           ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.7083333333333333,
+          "y": 0.8662952646239555,
+          "uniqueID": "id-5101",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -59,
+              "currentEquation": "-59"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -272.5
+            },
+            {
+              "name": "zDist",
+              "ioValue": 281,
+              "currentEquation": "15*25.4-100"
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.34325396825396826,
+          "y": 0.9025069637883008,
+          "uniqueID": "id-5107",
+          "name": "(570/-2)+T",
+          "ioValues": [
+            {
+              "name": "T",
+              "ioValue": 12.5
+            }
+          ],
+          "currentEquation": "(570/-2)+T"
         }
       ],
       "allConnectors": [
@@ -1194,6 +1242,11 @@
           "ap2Name": "Wood_Thickness",
           "ap1ID": "id-4414",
           "ap2ID": "id-4759"
+        },
+        {
+          "ap2Name": "T",
+          "ap1ID": "id-4414",
+          "ap2ID": "id-5107"
         },
         {
           "ap2Name": "geometry",
@@ -1274,6 +1327,26 @@
           "ap2Name": "geometry",
           "ap1ID": "id-5089",
           "ap2ID": "id-5095"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-5089",
+          "ap2ID": "id-5101"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-5095",
+          "ap2ID": "id-4504"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-5101",
+          "ap2ID": "id-4504"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-5107",
+          "ap2ID": "id-5101"
         }
       ],
       "fileTypeVersion": 1
@@ -1295,8 +1368,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2585978835978836,
-      "y": 0.6267409470752089,
+      "x": 0.26785714285714285,
+      "y": 0.5766016713091923,
       "uniqueID": "id-4516",
       "name": "Curved Back",
       "ioValues": [
@@ -1509,8 +1582,8 @@
     },
     {
       "atomType": "Rotate",
-      "x": 0.4001322751322751,
-      "y": 0.6991643454038997,
+      "x": 0.3458994708994709,
+      "y": 0.5933147632311978,
       "uniqueID": "id-4561",
       "ioValues": [
         {
@@ -1534,8 +1607,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.5001322751322751,
-      "y": 0.6991643454038997,
+      "x": 0.4748677248677248,
+      "y": 0.596100278551532,
       "uniqueID": "id-4567",
       "ioValues": [
         {
@@ -1570,6 +1643,10 @@
         },
         {
           "name": "Shape 2",
+          "ioValue": null
+        },
+        {
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -3443,6 +3520,32 @@
           "currentEquation": "200"
         }
       ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4384920634920635,
+      "y": 0.8690807799442898,
+      "uniqueID": "id-5112",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 250,
+          "currentEquation": "250"
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 200,
+          "currentEquation": "200"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -3472,6 +3575,11 @@
       "ap2ID": "id-4567"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4561",
+      "ap2ID": "id-5112"
+    },
+    {
       "ap2Name": "Shape 1",
       "ap1ID": "id-4567",
       "ap2ID": "id-4573"
@@ -3490,6 +3598,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-5077",
       "ap2ID": "id-5083"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-5112",
+      "ap2ID": "id-4573"
     }
   ],
   "unitsKey": "MM",
