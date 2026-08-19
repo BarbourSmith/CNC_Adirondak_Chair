@@ -1,13 +1,600 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-4365",
-    "name": "CNC_Adirondak_Chair",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-4365",
+  "name": "CNC_Adirondak_Chair",
+  "ioValues": [
+    {
+      "name": "Wood_Thickness",
+      "ioValue": 12.5,
+      "currentEquation": "12.5"
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-4366",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.3194444444444444,
+      "y": 0.6239554317548747,
+      "uniqueID": "id-4368",
+      "name": "Side Panel",
+      "ioValues": [
+        {
+          "name": "Wood_Thickness",
+          "ioValue": 12.5
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4370",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.22156084656084654,
+          "y": 0.8746518105849581,
+          "uniqueID": "id-4385",
+          "name": "Rounded_Rectangle",
+          "ioValues": [
+            {
+              "name": "X_Length",
+              "ioValue": 787.4,
+              "currentEquation": "787.4"
+            },
+            {
+              "name": "Y_Length",
+              "ioValue": 533.4,
+              "currentEquation": "533.4"
+            },
+            {
+              "name": "Radius",
+              "ioValue": 20,
+              "currentEquation": "20"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4380",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4381",
+              "name": "X_Length"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-4382",
+              "name": "Y_Length"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-4383",
+              "name": "Radius"
+            },
+            {
+              "atomType": "Code",
+              "x": 0.49603174603174605,
+              "y": 0.637883008356546,
+              "uniqueID": "id-4384",
+              "ioValues": [
+                {
+                  "name": "width",
+                  "ioValue": 787.4
+                },
+                {
+                  "name": "height",
+                  "ioValue": 533.4
+                },
+                {
+                  "name": "cornerRadius",
+                  "ioValue": 20
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "function run(\n  width: number = 40,\n  height: number = 30,\n  cornerRadius: number = 5,\n): Assembly {\n  // Create a 2D rounded rectangle sketch\n  const roundedRect = replicad.drawRoundedRectangle(width, height, cornerRadius);\n\n  return new Assembly({\n    geometry: roundedRect,\n    tags: [\"rounded-rectangle\", \"2d\"],\n    bom: [`Rounded rectangle ${width}×${height} mm, r=${cornerRadius} mm`],\n  });\n}",
+              "compiledCode": "\"use strict\";\nfunction run(width = 40, height = 30, cornerRadius = 5) {\n    // Create a 2D rounded rectangle sketch\n    const roundedRect = replicad.drawRoundedRectangle(width, height, cornerRadius);\n    return new Assembly({\n        geometry: roundedRect,\n        tags: [\"rounded-rectangle\", \"2d\"],\n        bom: [`Rounded rectangle ${width}×${height} mm, r=${cornerRadius} mm`],\n    });\n}\n"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "width",
+              "ap1ID": "id-4381",
+              "ap2ID": "id-4384"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-4382",
+              "ap2ID": "id-4384"
+            },
+            {
+              "ap2Name": "cornerRadius",
+              "ap1ID": "id-4383",
+              "ap2ID": "id-4384"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4384",
+              "ap2ID": "id-4380"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-19T18:23:39.128Z",
+            "privateRepo": false,
+            "repoName": "Rounded_Rectangle",
+            "dateCreated": "2026-06-24T22:02:13Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-460774",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/BarbourSmith/Rounded_Rectangle",
+            "topics": [],
+            "pullRequests": [],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739791",
+            "ranking": 7.8,
+            "searchField": "rounded_rectangle barboursmith creates a 2d rectangle with rounded corners  ",
+            "owner": "BarbourSmith",
+            "description": "Creates a 2D rectangle with rounded corners ",
+            "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1787178132207
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-4403",
+          "name": "Wood_Thickness",
+          "type": "number"
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.4748677248677248,
+          "y": 0.6183844011142061,
+          "uniqueID": "id-4406",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 12.5
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4385",
+          "ap2ID": "id-4406"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-4403",
+          "ap2ID": "id-4406"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4406",
+          "ap2ID": "id-4370"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.7063492063492064,
+      "y": 0.4874651810584958,
+      "uniqueID": "id-4372",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.4345403899721449,
+      "uniqueID": "id-4400",
+      "name": "Wood_Thickness"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.23214285714285715,
+      "y": 0.2924791086350975,
+      "uniqueID": "id-4410",
+      "name": "Side Pannels",
+      "ioValues": [
+        {
+          "name": "Wood_Thickness",
+          "ioValue": 12.5
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4412",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-4414",
+          "name": "Wood_Thickness",
+          "type": "number"
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.37433862433862436,
+          "y": 0.6295264623955432,
+          "uniqueID": "id-4417",
+          "name": "Side Panel",
+          "ioValues": [
+            {
+              "name": "Wood_Thickness",
+              "ioValue": 12.5
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4418",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-4425",
+              "name": "Wood_Thickness",
+              "type": "number"
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.4748677248677248,
+              "y": 0.6183844011142061,
+              "uniqueID": "id-4426",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 12.5
+                }
+              ]
+            },
+            {
+              "atomType": "GitHubMolecule",
+              "x": 0.22156084656084654,
+              "y": 0.8746518105849581,
+              "uniqueID": "id-4419",
+              "name": "Rounded_Rectangle",
+              "ioValues": [
+                {
+                  "name": "X_Length",
+                  "ioValue": 787.4
+                },
+                {
+                  "name": "Y_Length",
+                  "ioValue": 533.4
+                },
+                {
+                  "name": "Radius",
+                  "ioValue": 20
+                }
+              ],
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-4420",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.15384615384615385,
+                  "uniqueID": "id-4421",
+                  "name": "X_Length"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.24615384615384617,
+                  "uniqueID": "id-4422",
+                  "name": "Y_Length"
+                },
+                {
+                  "atomType": "Input",
+                  "x": 0.025384615384615384,
+                  "y": 0.3384615384615385,
+                  "uniqueID": "id-4423",
+                  "name": "Radius"
+                },
+                {
+                  "atomType": "Code",
+                  "x": 0.49603174603174605,
+                  "y": 0.637883008356546,
+                  "uniqueID": "id-4424",
+                  "ioValues": [
+                    {
+                      "name": "width",
+                      "ioValue": 787.4
+                    },
+                    {
+                      "name": "height",
+                      "ioValue": 533.4
+                    },
+                    {
+                      "name": "cornerRadius",
+                      "ioValue": 20
+                    }
+                  ],
+                  "interpreterVersion": 1,
+                  "code": "function run(\n  width: number = 40,\n  height: number = 30,\n  cornerRadius: number = 5,\n): Assembly {\n  // Create a 2D rounded rectangle sketch\n  const roundedRect = replicad.drawRoundedRectangle(width, height, cornerRadius);\n\n  return new Assembly({\n    geometry: roundedRect,\n    tags: [\"rounded-rectangle\", \"2d\"],\n    bom: [`Rounded rectangle ${width}×${height} mm, r=${cornerRadius} mm`],\n  });\n}",
+                  "compiledCode": "\"use strict\";\nfunction run(width = 40, height = 30, cornerRadius = 5) {\n    // Create a 2D rounded rectangle sketch\n    const roundedRect = replicad.drawRoundedRectangle(width, height, cornerRadius);\n    return new Assembly({\n        geometry: roundedRect,\n        tags: [\"rounded-rectangle\", \"2d\"],\n        bom: [`Rounded rectangle ${width}×${height} mm, r=${cornerRadius} mm`],\n    });\n}\n"
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "width",
+                  "ap1ID": "id-4421",
+                  "ap2ID": "id-4424"
+                },
+                {
+                  "ap2Name": "height",
+                  "ap1ID": "id-4422",
+                  "ap2ID": "id-4424"
+                },
+                {
+                  "ap2Name": "cornerRadius",
+                  "ap1ID": "id-4423",
+                  "ap2ID": "id-4424"
+                },
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-4424",
+                  "ap2ID": "id-4420"
+                }
+              ],
+              "parentRepo": {
+                "lastFoundGit": "2026-08-19T18:23:39.128Z",
+                "privateRepo": false,
+                "repoName": "Rounded_Rectangle",
+                "dateCreated": "2026-06-24T22:02:13Z",
+                "likes": 0,
+                "readMe": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/README.md?sanitize=true",
+                "yyyy": 2026,
+                "topMoleculeID": "id-460774",
+                "githubMoleculesUsed": [],
+                "html_url": "https://github.com/BarbourSmith/Rounded_Rectangle",
+                "topics": [],
+                "pullRequests": [],
+                "parentRepo": null,
+                "forks": 0,
+                "dateModified": "739791",
+                "ranking": 7.8,
+                "searchField": "rounded_rectangle barboursmith creates a 2d rectangle with rounded corners  ",
+                "owner": "BarbourSmith",
+                "description": "Creates a 2D rectangle with rounded corners ",
+                "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/project.abundance?sanitize=true",
+                "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Rounded_Rectangle/master/project.svg?sanitize=true",
+                "isLocal": false
+              },
+              "unitsKey": "Unitless",
+              "fileTypeVersion": 1,
+              "lastReloadedFromGithubAt": 1787178132207
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-4425",
+              "ap2ID": "id-4426"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-4426",
+              "ap2ID": "id-4418"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-4419",
+              "ap2ID": "id-4426"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.5674603174603174,
+          "y": 0.6768802228412256,
+          "uniqueID": "id-4450",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 90,
+              "currentEquation": "90"
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.6964285714285714,
+          "y": 0.7632311977715878,
+          "uniqueID": "id-4456",
+          "name": "Github Molecule",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-4458",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.45171957671957674,
+          "y": 0.36490250696378834,
+          "uniqueID": "id-4460",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.5517195767195767,
+          "y": 0.36490250696378834,
+          "uniqueID": "id-4463",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": -1
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "Wood_Thickness",
+          "ap1ID": "id-4414",
+          "ap2ID": "id-4417"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4417",
+          "ap2ID": "id-4450"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4460",
+          "ap2ID": "id-4463"
+        }
+      ],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-4372",
+      "ap2ID": "id-4366"
+    },
+    {
+      "ap2Name": "Wood_Thickness",
+      "ap1ID": "id-4400",
+      "ap2ID": "id-4368"
+    },
+    {
+      "ap2Name": "Wood_Thickness",
+      "ap1ID": "id-4400",
+      "ap2ID": "id-4410"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
