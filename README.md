@@ -11,7 +11,7 @@
 
 
 
- Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. https://dfohome.com/product/DURAWOOD-Poly-3-Piece-Sunrise-Adirondack-Chair-and-Tete-A-Tete-Set/SRAC-TETE-COMBO?srsltid=AfmBOor7fFYjimYAN4y8zDfM7Bvoqn5FfjJYb2CLLzbguVTccNdxm7o2  
+ Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. https://dfohome.com/product/DURAWOOD-Poly-3-Piece-Sunrise-Adirondack-Chair-and-Tete-A-Tete-Set/SRAC-TETE-COMBO?srsltid=AfmBOor7fFYjimYAN4y8zDfM7Bvoqn5FfjJYb2CLLzbguVTccNdxm7o2  https://www.etsy.com/FoobyWoobyWoodworks/listing/1502436920/low-profile-adirondack-chair-vcarve-pro
 
 
 
