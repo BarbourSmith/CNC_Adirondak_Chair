@@ -612,8 +612,8 @@
     },
     {
       "atomType": "Readme",
-      "x": 0.2361111111111111,
-      "y": 0.7688022284122563,
+      "x": 0.2281746031746032,
+      "y": 0.1615598885793872,
       "uniqueID": "id-4514",
       "name": "README",
       "ioValues": [
@@ -622,8 +622,272 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
-      "readMeText": "Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. https://dfohome.com/product/DURAWOOD-Poly-3-Piece-Sunrise-Adirondack-Chair-and-Tete-A-Tete-Set/SRAC-TETE-COMBO?srsltid=AfmBOor7fFYjimYAN4y8zDfM7Bvoqn5FfjJYb2CLLzbguVTccNdxm7o2  ",
+      "readMeText": "Inspirations:https://www.fouroakscrafts.com/adirondack-chair-tutorial/. https://dfohome.com/product/DURAWOOD-Poly-3-Piece-Sunrise-Adirondack-Chair-and-Tete-A-Tete-Set/SRAC-TETE-COMBO?srsltid=AfmBOor7fFYjimYAN4y8zDfM7Bvoqn5FfjJYb2CLLzbguVTccNdxm7o2  https://www.etsy.com/FoobyWoobyWoodworks/listing/1502436920/low-profile-adirondack-chair-vcarve-pro",
       "global": true
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.251984126984127,
+      "y": 0.8217270194986073,
+      "uniqueID": "id-4516",
+      "name": "Curved Back",
+      "ioValues": [
+        {
+          "name": "Wood_Thickness",
+          "ioValue": 12.5
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-4518",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-4520",
+          "name": "Wood_Thickness",
+          "type": "number"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.3988095238095238,
+          "y": 0.3537604456824513,
+          "uniqueID": "id-4523",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 100,
+              "currentEquation": "100"
+            },
+            {
+              "name": "y length",
+              "ioValue": 570,
+              "currentEquation": "570"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.5648148148148149,
+          "y": 0.2813370473537604,
+          "uniqueID": "id-4527",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 12.5
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.40145502645502645,
+          "y": 0.6685236768802229,
+          "uniqueID": "id-4531",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 1500
+            }
+          ]
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.19973544973544974,
+          "y": 0.7604456824512534,
+          "uniqueID": "id-4534",
+          "name": "Diameter",
+          "value": 1500
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.30886243386243384,
+          "y": 0.8551532033426184,
+          "uniqueID": "id-4536",
+          "name": "D/-2",
+          "ioValues": [
+            {
+              "name": "D",
+              "ioValue": 1500
+            }
+          ],
+          "currentEquation": "D/-2"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.47817460317460314,
+          "y": 0.7743732590529249,
+          "uniqueID": "id-4541",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": -750
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.6924603174603174,
+          "y": 0.6128133704735376,
+          "uniqueID": "id-4547",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.591931216931217,
+          "y": 0.8050139275766017,
+          "uniqueID": "id-4551",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 100,
+              "currentEquation": "100"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-4520",
+          "ap2ID": "id-4527"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4523",
+          "ap2ID": "id-4527"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-4527",
+          "ap2ID": "id-4547"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4531",
+          "ap2ID": "id-4541"
+        },
+        {
+          "ap2Name": "D",
+          "ap1ID": "id-4534",
+          "ap2ID": "id-4536"
+        },
+        {
+          "ap2Name": "diameter",
+          "ap1ID": "id-4534",
+          "ap2ID": "id-4531"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-4536",
+          "ap2ID": "id-4541"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-4541",
+          "ap2ID": "id-4551"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-4547",
+          "ap2ID": "id-4518"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-4551",
+          "ap2ID": "id-4547"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.4001322751322751,
+      "y": 0.6991643454038997,
+      "uniqueID": "id-4561",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 20,
+          "currentEquation": "20"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5001322751322751,
+      "y": 0.6991643454038997,
+      "uniqueID": "id-4567",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 500,
+          "currentEquation": "500"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -633,9 +897,24 @@
       "ap2ID": "id-4410"
     },
     {
+      "ap2Name": "Wood_Thickness",
+      "ap1ID": "id-4400",
+      "ap2ID": "id-4516"
+    },
+    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-4410",
       "ap2ID": "id-4366"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4516",
+      "ap2ID": "id-4561"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-4561",
+      "ap2ID": "id-4567"
     }
   ],
   "unitsKey": "MM",
